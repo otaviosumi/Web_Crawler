@@ -7,4 +7,15 @@ class BrickSetSpider(scrapy.Spider):
     def parse(self, response):
         SET_SELECTOR = '.set'
         for brickset in response.css(SET_SELECTOR):
-            pass
+
+            NAME_SELECTOR = 'h1 ::text'
+            IMAGE_SELECTOR = 'img ::attr(src)'
+            PIECES_SELECTOR = './/dl[dt/text() = "Pieces"]/dd/a/text()'
+            MINIFIGS_SELECTOR = './/dl[dt/text() = "Minifigs"]/dd[2]/a/text()'
+
+            yield {
+                'name': brickset.css(NAME_SELECTOR).extract_first(),
+                'image': brickset.css(IMAGE_SELECTOR).extract_first(),
+                'pieces': brickset.xpath(PIECES_SELECTOR).extract_first(),
+                'minifigs': brickset.xpath(MINIFIGS_SELECTOR).extract_first(),
+            }
