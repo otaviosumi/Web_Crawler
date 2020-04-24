@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta name="author" content="http://www.dennova.com.br" />
+                                <meta name="GOOGLEBOT" content="ARCHIVE" />
+        <meta name="ROBOTS" content="INDEX,FOLLOW" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />        
+        <title>Corpo Docente :: EE  - ESCOLA DE ENFERMAGEM</title>
+
+        <!-- icons -->
+        <link rel="shortcut icon" href="/site/app/webroot//favicon.ico">       
+        <link rel="apple-touch-icon" href="/site/app/webroot//apple-touch-icon.png">
+        <!-- /icons -->
+
+        <!-- css -->
+<!--        <link rel="stylesheet" media="all" href="/site/app/webroot//css/normalize.css">-->
+        <link rel="stylesheet" media="all" href="/site/app/webroot//css/cake_core.css">
+        <link rel="stylesheet" media="all" href="/site/app/webroot//css/smoothness/jquery-ui-1.8.5.custom.css">
+
+        <!-- 960.gs | GRID CSS -->
+<!--        <link rel="stylesheet" media="all" href="/site/app/webroot//css/960_24_col.css">-->
+        <link rel="stylesheet" media="all" href="/site/app/webroot//css/global.css">
+        <!-- /css -->
+
+        <!-- css para internet explorer -->
+                    
+                        <!-- /css para internet explorer -->
+
+        
+	<script type="text/javascript" src="/site/app/webroot/js/jquery-1.5.1.min.js"></script>
+	<script type="text/javascript" src="/site/app/webroot/js/jquery-ui-1.8.5.custom.min.js"></script>
+	<script type="text/javascript" src="/site/app/webroot/js/global.js"></script>
+   
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+           <script type="text/javascript" src="/site/app/webroot//js/selectivizr-min.js"></script>        
+        <![endif]-->    
+    </head>
+    <body>
+        <!-- container -->
+        ﻿<!-- HEADER -->
+<!-- barra usp -->
+<script type="text/javascript" src="http://www.ccs.usp.br/uspbarra/barra2.js" charset="utf-8"></script>
+<!-- fim barra -->
+<div id="structure_header">
+    <div class="band_header"></div>
+    <div class="backgrond_header">
+        <div class="content_header">
+
+            <div class="band_ing_esp">
+
+                <a href="#"><img src="/site/app/webroot//img/esp.jpg"/></a>
+
+                <a href="http://sites.usp.br/ee/" target="blank"><img src="/site/app/webroot//img/ing.jpg"/></a>
+
+            </div>
+
+            <!--            <a href="#" id="uspopen" target="black">
+                            <div class="usp_header"></div>
+                        </a>-->
+            <a href="/site/index.php/" title="EE USP ENFERMAGEM">
+                <div class="logo_ee_usp"></div>
+            </a>
+            <div class="title_header">
+                <h2>Universidade de São Paulo</h2>
+                <h3>ESCOLA DE ENFERMAGEM</h3>
+            </div>
+            <div class="social_networks_menu">
+                <div class="social_networks">
+                    <a href="#" title="Stoa USP">
+                        <div class="sk_social"></div>
+                    </a>
+                    <a href="http://twitter.com/EnfermagemUSP" target="_blank" title="Twitter">
+                        <div class="tw_social"></div>
+                    </a>
+                    <a href="https://www.facebook.com/enfermagemusp"  target="_blank" title="Facebook">
+                        <div class="fb_social"></div>
+                    </a>
+                </div>
+                <div class="structure_menu_social">
+                    <ul>
+                        <li>
+                            <a href="http://email.usp.br" target="_blank">Email USP</a>
+                        </li>
+                        <li><img src="/site/app/webroot//img/line_menu_social.png"/></li>
+                        <li>
+                            <a href="http://www.ee.usp.br/site/Index.php//paginas/mostrar/2254/2534/165" target="_self">Intranet</a>
+                        </li>
+                        <li><img src="/site/app/webroot//img/line_menu_social.png"/></li>
+                        <li>
+                            <a href="/site/index.php/paginas/mostrar/27/39">Contatos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+
+            <div class="structure_busca_site">
+                <form action="/site/index.php/busca/resultado" onsubmit="window.location.href=&#039;/site/index.php/busca/resultado/termo:&#039; + $(&#039;.busca-termo&#039;).val();return false;" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST" /></div>                <input type="hidden" id="buscaBase" value="/site/index.php" />
+                <input name="data[Busca][termo]" type="text" value="Busca" class="camp_busc_header esvazia busca-termo" id="busca" />                <input id="btnBuscar" name="" type="submit" />
+                </form>            </div>
+
+            <div id="structure_main_menu">
+                <div id="nav">
+                    <ul>
+
+                        <li>
+                            <a href="/site/app/webroot//">INSTITUCIONAL</a>
+                            <ul style="margin: 15px 0 0 -7px;">
+                                
+                                    
+                                    <a href="/site/index.php/paginas/mostrar/28/39" target="_self"> A EEUSP</a> 
+                                
+                                    
+                                    <a href="/site/index.php/paginas/mostrar/31/39" target="_self">Departamentos</a> 
+                                
+                                    
+                                    <a href="/site/index.php/corpo_docente/39" target="_self">Corpo Docente</a> 
+                                
+                                    
+                                    <a href="http://www.ee.usp.br/site/index.php/paginas/mostrar/211/39" target="_self">Publicações dos docentes</a> 
+                                
+                                    
+                                    <a href="http://www.ee.usp.br/site/Index.php//paginas/mostrar/1999//39" target="_self">Concursos</a> 
+                                
+                                    
+                                    <a href="/site/index.php/paginas/mostrar/414/39" target="_blank">Licitações</a> 
+                                
+                                    
+                                    <a href="/site/index.php/cursos/39" target="_self">Cursos</a> 
+                                
+                                    
+                                    <a href="/site/index.php/paginas/mostrar/102/39" target="_self">Colegiados</a> 
+                                
+                                    
+                                    <a href="/site/index.php/paginas/mostrar/29/39" target="_self">Histórico</a> 
+                                
+                                    
+                                    <a href="/site/index.php/paginas/mostrar/30/39" target="_self">Organização</a> 
+                                
+                                    
+                                    <a href="http://www.ee.usp.br/site/Index.php//paginas/mostrar/1876//39" target="_self">Normas e Regimentos</a> 
+                                
+                                    
+                                    <a href="/site/index.php/paginas/mostrar/1281/39" target="_self">Comissões</a> 
+                                
+                                    
+                                    <a href="/site/index.php/eventos/index/39" target="_self">Eventos</a> 
+                                
+                                    
+                                    <a href="/site/index.php/noticias/index/39" target="_self">Notícias</a> 
+                                
+                                    
+                                    <a href="/site/index.php/paginas/mostrar/104/39" target="_self">Localização</a> 
+                                
+                                    
+                                    <a href="/site/index.php/paginas/mostrar/27/39" target="_self">Contatos</a> 
+                                
+                                    
+                                    <a href="http://www.ee.usp.br/site/Index.php//paginas/mostrar/2094//39" target="_self">Galeria de fotos</a> 
+                                
+                                    
+                                    <a href="http://www.ee.usp.br/site/Index.php//paginas/mostrar/183/39" target="_self">Mídias</a> 
+                                                            </ul>
+                        </li>
+
+                        <li>|</li>
+
+                        <li>
+                            <a href="/site/index.php/">ENSINO</a>
+                            <ul>
+                                                                                                
+                                
+                                <a href="/site/index.php/paginas/mostrar/119/51" target="_self">Graduação</a> 
+                                                                                                
+                                
+                                <a href="http://www.ee.usp.br/site/Index.php/paginas/mostrar/36/51" target="_self">Pós-Graduação</a> 
+                                                            </ul>
+                        </li>
+
+                        <li>|</li>
+
+                        <li>
+                            <a href="/site/index.php/">PESQUISA</a>
+                            <ul>
+                                                                                                <a href="/site/index.php/paginas/mostrar/85/54" target="_self">Apresentação</a> 
+                                                                                                <a href="/site/index.php/paginas/mostrar/88/54" target="_self">Pós-Doutorado</a> 
+                                                                                                <a href="http://www.ee.usp.br/site/Index.php//paginas/mostrar/3054/54" target="_self">Pesquisador Colaborador</a> 
+                                                                                                <a href="http://www.ee.usp.br/site/index.php/paginas/mostrar/129/54" target="_self">Iniciação Científica</a> 
+                                                                                                <a href="http://www.ee.usp.br/site/Index.php//paginas/mostrar/2220/54" target="_self">Boas Práticas em Pesquisa</a> 
+                                                                                                <a href="http://www.ee.usp.br/site/Index.php//paginas/mostrar/2237/54" target="_self">Pré-IC</a> 
+                                                                                                <a href="http://www.ee.usp.br/site/Index.php//paginas/mostrar/2401/54" target="_self">SIICUSP</a> 
+                                                                                                <a href="/site/index.php/paginas/mostrar/86/54" target="_self">Comissão</a> 
+                                                                                                <a href="/site/index.php/paginas/mostrar/87/54" target="_self">Reuniões</a> 
+                                                                                                <a href="http://www.ee.usp.br/site/Index.php//paginas/mostrar/3151/54" target="_self">Grupos de Pesquisa</a> 
+                                                                                                <a href="http://www.ee.usp.br/site/index.php/paginas/mostrar/1624/2294/156" target="_self">Instituto Joanna Briggs</a> 
+                                                                                                <a href="http://www.ee.usp.br/site/index.php/pesquisadores/index/39/" target="_self">Pesquisadores</a> 
+                                                                                                <a href="/site/index.php/paginas/mostrar/132/54" target="_self">Escritório de Apoio ao Pesquisador (EAP)</a> 
+                                                                                                <a href="/site/index.php/paginas/mostrar/133/54" target="_self">Coleta de Dados</a> 
+                                                                                                <a href="/site/index.php/paginas/mostrar/134/54" target="_self">Análise Estatística</a> 
+                                                                                                <a href="/site/index.php/paginas/mostrar/91/54" target="_self">Comitê de Ética</a> 
+                                                                                                <a href="/site/index.php/paginas/mostrar/170/54" target="_self">Núcleos</a> 
+                                                                                                <a href="/site/index.php/paginas/mostrar/136/54" target="_self">Links</a> 
+                                                                                                <a href="/site/index.php/paginas/mostrar/90/54" target="_self">Intercâmbio</a> 
+                                                            </ul>
+                        </li>
+
+                        <li>|</li>
+
+                        <li>
+                            <a href="/site/index.php/">EXTENSÃO</a>
+                            <ul>
+                                                                                                <a href="http://www.ee.usp.br/site/Index.php/paginas/mostrar/1692/2320/157" target="_self">Apresentação</a> 
+                                                                                                <a href="http://www.ee.usp.br/site/Index.php/paginas/mostrar/126/2320/157" target="_self">Comissão</a> 
+                                                                                                <a href="http://www.ee.usp.br/site/Index.php/paginas/mostrar/1694/2320/157" target="_self">Secretaria (Informações)</a> 
+                                                                                                <a href="http://www.ee.usp.br/site/Index.php/paginas/mostrar/1701/2320/157" target="_self">Cursos</a> 
+                                                                                                <a href="http://www.ee.usp.br/site/Index.php/paginas/mostrar/1709/2320/157" target="_self">Programa de Residência em Enfermagem</a> 
+                                                                                                <a href="http://www.ee.usp.br/site/Index.php//paginas/mostrar/1745/2320/157" target="_self">Eventos</a> 
+                                                                                                <a href="http://www.ee.usp.br/site/Index.php/paginas/mostrar/1691/2320/157" target="_self">Projetos e Programas</a> 
+                                                                                                <a href="http://www.ee.usp.br/site/index.php/paginas/mostrar/1286/2031/145" target="_self">NACE:AENSC</a> 
+                                                                                                <a href="http://www.ee.usp.br/site/Index.php/paginas/mostrar/1720/2320/157" target="_self">Links Uteis</a> 
+                                                                                                <a href="http://www.ee.usp.br/site/Index.php/paginas/mostrar/1695/2320/157" target="_self">Normas e Resoluções</a> 
+                                                                                                <a href="http://www.ee.usp.br/site/Index.php//paginas/mostrar/1973/2320/157" target="_self">Galeria de Fotos</a> 
+                                                            </ul>
+                        </li>
+
+                        <li>|</li>
+
+                        <li>
+                            <a href="/site/index.php/">INTERNACIONALIZAÇÃO</a>
+                            <ul>
+                                                                                                <a href="/site/index.php/paginas/mostrar/2150/111" target="_self">Comissão de Cooperação Internacional </a> 
+                                                                                                <a href="http://www.ee.usp.br/site/Index.php//paginas/mostrar/2145/111" target="_self">Mandatos</a> 
+                                                                                                <a href="http://www.ee.usp.br/site/index.php/paginas/mostrar/146/111" target="_self">Mobilidade Estudantil USP</a> 
+                                                                                                <a href="http://www.ee.usp.br/site/index.php/paginas/mostrar/1807/111" target="_self">Mobilidade Docente</a> 
+                                                                                                <a href="http://www.ee.usp.br/site/Index.php//paginas/mostrar/1881/111" target="_self">Convênios</a> 
+                                                                                                <a href="http://www.ee.usp.br/site/Index.php//paginas/mostrar/1808/111" target="_self">Programas</a> 
+                                                                                                <a href="/site/index.php/paginas/mostrar/2696/111/111" target="_self">Editais</a> 
+                                                                                                <a href="http://www.ee.usp.br/ccint/Calendario_Reunioes_CCInt.pdf" target="_blank">Cronograma de Reuniões</a> 
+                                                                                                <a href="/site/index.php/paginas/mostrar/2930/111/111" target="_self">Professor/Pesquisador Visitante</a> 
+                                                                                                <a href="http://www.ee.usp.br/site/Index.php//paginas/mostrar/2164/111" target="_self">Notícias</a> 
+                                                                                                <a href="http://www.ee.usp.br/site/Index.php//paginas/mostrar/2163/111" target="_self">Eventos</a> 
+                                                                                                <a href="http://www.ee.usp.br/site/Index.php//paginas/mostrar/2165/111" target="_self">Galeria de Fotos</a> 
+                                                                                                <a href="/site/index.php/paginas/mostrar/2166/111" target="_self">Contato</a> 
+                                                            </ul>
+                        </li>
+
+                        <li>|</li>
+
+                        <li>
+                            <a href="http://www.ee.usp.br/biblioteca/site/" target="_blank">BIBLIOTECA</a>
+                            <ul>
+                                                            </ul>
+                        </li>
+
+                        <li>|</li>
+
+                        <li>
+                            <a href="/site/index.php/">ALUNOS</a>
+                            <ul>
+								                                                                <a href="http://www.ee.usp.br/site/Index.php/paginas/mostrar/119/51" target="_self">Informações aos ingressantes 2017</a> 
+                                                                                                <a href="http://alumni.usp.br/" target="_blank">Portal Alumni USP</a> 
+                                                                                                <a href="/site/index.php/paginas/mostrar/78/103" target="_self">Centro Acadêmico</a> 
+                                                                                                <a href="/site/index.php/paginas/mostrar/162/103" target="_self">Atlética</a> 
+                                                                                                <a href="/site/index.php/cursos/103" target="_self">Cursos</a> 
+                                                                                                <a href="/site/index.php/eventos/103" target="_self">Eventos</a> 
+                                                                                                <a href="/site/index.php/paginas/mostrar/1139/103" target="_self">Monitoria</a> 
+                                                                                                <a href="http://www.ee.usp.br/site/index.php/paginas/mostrar/122/51" target="_self">Recomendações para Acidentes com Material Biológico</a> 
+                                                                                                <a href="http://www.ee.usp.br/site/Index.php//paginas/mostrar/1517/" target="_self">Downloads</a> 
+                                                            </ul
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+
+<!-- /HEADER -->
+        <div id="container">
+            <!--CORPO DOCENTE-->
+
+
+<div class="menu_institucional">
+    <div class="title_institucional_bloco">
+        <p>Institucional</p>
+    </div>
+    <div class="box_menu_institucional">
+        <div class="detalhe_menu_institucional"></div>
+        <div class="lista_menu_institucional">            
+    
+                                                                    <dt>
+                        <div class="detalhe_sem_submenu"></div>
+                        
+                                                
+                        <a href="/site/index.php/paginas/mostrar/28/39" target="_self" >
+                        
+                             A EEUSP                        </a>
+                    </dt>
+                                                                            <dt>
+                        <div class="detalhe_sem_submenu"></div>
+                        
+                                                
+                        <a href="/site/index.php/paginas/mostrar/31/39" target="_self" >
+                        
+                            Departamentos                        </a>
+                    </dt>
+                                                                            <dt>
+                        <div class="detalhe_sem_submenu"></div>
+                        
+                                                
+                        <a href="/site/index.php/corpo_docente/39" target="_self" >
+                        
+                            Corpo Docente                        </a>
+                    </dt>
+                                                                            <dt>
+                        <div class="detalhe_sem_submenu"></div>
+                        
+                                                
+                        <a href="http://www.ee.usp.br/site/index.php/paginas/mostrar/211" target="_self" >
+                        
+                            Publicações dos docentes                        </a>
+                    </dt>
+                                                                            <dt>
+                        <div class="detalhe_sem_submenu"></div>
+                        
+                                                
+                        <a href="http://www.ee.usp.br/site/Index.php//paginas/mostrar/1999/" target="_self" >
+                        
+                            Concursos                        </a>
+                    </dt>
+                                                                            <dt>
+                        <div class="detalhe_sem_submenu"></div>
+                        
+                                                
+                        <a href="/site/index.php/paginas/mostrar/414/39" target="_blank" >
+                        
+                            Licitações                        </a>
+                    </dt>
+                                                                            <dt>
+                        <div class="detalhe_sem_submenu"></div>
+                        
+                                                
+                        <a href="/site/index.php/cursos/39" target="_self" >
+                        
+                            Cursos                        </a>
+                    </dt>
+                                                                            <dt>
+                        <div class="detalhe_sem_submenu"></div>
+                        
+                                                
+                        <a href="/site/index.php/paginas/mostrar/102/39" target="_self" >
+                        
+                            Colegiados                        </a>
+                    </dt>
+                                                                            <dt>
+                        <div class="detalhe_sem_submenu"></div>
+                        
+                                                
+                        <a href="/site/index.php/paginas/mostrar/29/39" target="_self" >
+                        
+                            Histórico                        </a>
+                    </dt>
+                                                                            <dt>
+                        <div class="detalhe_com_submenu"></div>
+                        
+                                                
+                        <a href="/site/index.php/paginas/mostrar/30/39" target="_self" >
+                        
+                            Organização                        </a>
+                    </dt>
+                                        <dd>
+                        <ul>
+                                                                                
+                            <li><a href="/site/index.php/paginas/mostrar/31/39" target="_self">Departamentos</a></li>         
+                                                                                
+                            <li><a href="/site/index.php/paginas/mostrar/30/39" target="_self">Diretoria</a></li>         
+                                                                                
+                            <li><a href="/site/index.php/paginas/mostrar/95/39" target="_self">Acadêmica</a></li>         
+                                                                                
+                            <li><a href="/site/index.php/paginas/mostrar/96/39" target="_self">Administrativa</a></li>         
+                                                                                
+                            <li><a href="/site/index.php/paginas/mostrar/97/39" target="_self">Financeira</a></li>         
+                                                                                
+                            <li><a href="/site/index.php/paginas/mostrar/98/39" target="_self">Comunicação/Publicações</a></li>         
+                                                                                
+                            <li><a href="http://www.ee.usp.br/biblioteca/site/" target="_self">Biblioteca</a></li>         
+                                                                                
+                            <li><a href="http://www.ee.usp.br/site/Index.php/paginas/mostrar/1419/2094/147" target="_self">REEUSP</a></li>         
+                                                                                
+                            <li><a href="http://www.ee.usp.br/site/index.php/paginas/mostrar/1168/1917/141" target="_self">Centro Histórico</a></li>         
+                                                                                
+                            <li><a href="/site/index.php/paginas/mostrar/99/39" target="_self">Informática</a></li>         
+                                                                                
+                            <li><a href="/site/index.php/paginas/mostrar/101/39" target="_self">Apoio Laboratorial</a></li>         
+                                                    </ul>
+                    </dd>
+                                                                            <dt>
+                        <div class="detalhe_sem_submenu"></div>
+                        
+                                                
+                        <a href="http://www.ee.usp.br/site/Index.php//paginas/mostrar/1876/" target="_self" >
+                        
+                            Normas e Regimentos                        </a>
+                    </dt>
+                                                                            <dt>
+                        <div class="detalhe_sem_submenu"></div>
+                        
+                                                
+                        <a href="/site/index.php/paginas/mostrar/1281/39" target="_self" >
+                        
+                            Comissões                        </a>
+                    </dt>
+                                                                            <dt>
+                        <div class="detalhe_sem_submenu"></div>
+                        
+                                                
+                        <a href="/site/index.php/eventos/index/39" target="_self" >
+                        
+                            Eventos                        </a>
+                    </dt>
+                                                                            <dt>
+                        <div class="detalhe_sem_submenu"></div>
+                        
+                                                
+                        <a href="/site/index.php/noticias/index/39" target="_self" >
+                        
+                            Notícias                        </a>
+                    </dt>
+                                                                            <dt>
+                        <div class="detalhe_sem_submenu"></div>
+                        
+                                                
+                        <a href="/site/index.php/paginas/mostrar/104/39" target="_self" >
+                        
+                            Localização                        </a>
+                    </dt>
+                                                                            <dt>
+                        <div class="detalhe_sem_submenu"></div>
+                        
+                                                
+                        <a href="/site/index.php/paginas/mostrar/27/39" target="_self" >
+                        
+                            Contatos                        </a>
+                    </dt>
+                                                                            <dt>
+                        <div class="detalhe_sem_submenu"></div>
+                        
+                                                
+                        <a href="http://www.ee.usp.br/site/Index.php//paginas/mostrar/2094/" target="_self" >
+                        
+                            Galeria de fotos                        </a>
+                    </dt>
+                                                                            <dt>
+                        <div class="detalhe_sem_submenu"></div>
+                        
+                                                
+                        <a href="http://www.ee.usp.br/site/Index.php//paginas/mostrar/183" target="_self" >
+                        
+                            Mídias                        </a>
+                    </dt>
+                                                                    
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("dd").slideUp("slow");
+        $("dd").hide();
+        $("dt a").click(function(){
+            
+            $('.detalhe_com_submenu').removeClass('detalhe_com_submenu_menos'); 
+            $(this).prev().addClass("detalhe_com_submenu_menos");
+            $("dd:visible").slideUp("slow");
+            $(this).parent().next().slideDown("slow");   
+            
+            if($(this).parent().next().get(0).tagName=="DD"){
+               return false;
+            }
+            
+        });
+        
+        
+        /*
+        for (var i in location){
+		//navego pelas chaves do array como um for
+		console.log('Campo \''+i+'\': ' + location[i] );
+	}*/
+        
+        
+        $('.menu_institucional a').each(function(){
+            
+            var vhref = $(this).attr('href').toString();
+            var vloca = location.pathname.toString().replace("index/","");
+            var vloca2 = location.pathname.toString();
+            
+            //console.log( vhref + " - " + location.pathname.toString() );           
+            
+            
+            if(vhref.substr(-1)== "/"){
+                vhref = vhref.substr(0,vhref.length-1);
+            }
+            
+            if(vloca.substr(-1)== "/"){
+                vloca = vloca.substr(0,vloca.length-1);
+            }
+            
+            if(vloca2.substr(-1)== "/"){
+                vloca2 = vloca2.substr(0,vloca2.length-1);
+            }
+            
+            if( (vhref ==vloca) || (vhref ==vloca2)  ){
+                
+               // console.log( vhref + " - " + location.pathname.toString() );               
+                
+                
+                if( $(this).parent().get(0).tagName == "LI"){
+                    $(this).parent().parent().parent().prev().children('a').click();
+                    $(this).addClass('ativo_sub');
+                }else{
+                    $(this).addClass('ativo_menu_lat');
+                }
+            }
+        });
+        
+        
+        console.log();
+        
+    });
+</script>
+<div class="estrutura_contaudo_int">
+    <div class="titulo_internas"><h2>Corpo Docente</h2></div>
+    <div class="clear"></div>
+
+    <div class="structure_busca_docente">
+        <form action="/site/index.php/corpo_docente" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST" /></div>        <input type="hidden" id="buscaBase" value="/site/index.php" />
+        <input name="data[Busca][nome]" type="text" value="Busca de Docentes" class="camp_busc_docente esvazia" id="busca" />        <input id="btnBuscarDocente" name="" type="submit" />
+        </form>    </div>
+
+    <div class="estrutura_departamento_docente">
+        <form action="/site/index.php/corpo_docente" id="frmDpto2" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST" /></div>        <div class="input select"><select name="data[Busca][departamento_id]" class="campo_departamento_docente" id="BuscaDepartamentoId">
+<option value="">Escolha</option>
+<option value="52">ENP </option>
+<option value="53">ENC </option>
+<option value="55">ENS</option>
+<option value="56">ENO</option>
+</select></div>        </form>
+        <input type="button" value="Limpar Filtro"  class="limpar_filtro_docente" onclick="location.href='/site/index.php/corpo_docente/limpar_filtro'" />
+    </div>
+    <div class="clear"></div>
+
+    <div class="lista_docentes">
+        <ul>
+                            <li>
+                    <div class="img_lista_docente">
+                        <img src="/site/index.php/corpo_docente/display_img/51" width="108"/>
+                    </div>
+                    <div class="texto_lista_docente">
+                        <strong>Maria Cristina Komatsu Braga Massarollo</strong>
+                        <br/>
+                        <br/>
+                        Departamento: ENO <br/>
+                        E-mail: <a href="mailto:massaro@usp.br">massaro@usp.br</a>
+                        <br/>
+                        <br/>
+
+                                                    <!--Currículo Lattes: <a href="/site/dcms/app/webroot/uploads//curriculos/http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4708432A6">Clique aqui</a><br/>-->
+                            Currículo Lattes: <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4708432A6" target="_blank">Clique aqui</a><br/>
+                        
+                                                                    </div>
+                </li>
+                            <li>
+                    <div class="img_lista_docente">
+                        <img src="/site/index.php/corpo_docente/display_img/52" width="108"/>
+                    </div>
+                    <div class="texto_lista_docente">
+                        <strong>Maria de Fatima Fernandes Vattimo</strong>
+                        <br/>
+                        <br/>
+                        Departamento: ENC  <br/>
+                        E-mail: <a href="mailto:nephron@usp.br">nephron@usp.br</a>
+                        <br/>
+                        <br/>
+
+                                                    <!--Currículo Lattes: <a href="/site/dcms/app/webroot/uploads//curriculos/http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4791305U7">Clique aqui</a><br/>-->
+                            Currículo Lattes: <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4791305U7" target="_blank">Clique aqui</a><br/>
+                        
+                                                                    </div>
+                </li>
+                            <li>
+                    <div class="img_lista_docente">
+                        <img src="/site/index.php/corpo_docente/display_img/54" width="108"/>
+                    </div>
+                    <div class="texto_lista_docente">
+                        <strong>Maria De La Ó Ramallo Verissimo</strong>
+                        <br/>
+                        <br/>
+                        Departamento: ENP  <br/>
+                        E-mail: <a href="mailto:mdlorver@usp.br">mdlorver@usp.br</a>
+                        <br/>
+                        <br/>
+
+                                                    <!--Currículo Lattes: <a href="/site/dcms/app/webroot/uploads//curriculos/http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4708396E8">Clique aqui</a><br/>-->
+                            Currículo Lattes: <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4708396E8" target="_blank">Clique aqui</a><br/>
+                        
+                                                                    </div>
+                </li>
+                            <li>
+                    <div class="img_lista_docente">
+                        <img src="/site/index.php/corpo_docente/display_img/99" width="108"/>
+                    </div>
+                    <div class="texto_lista_docente">
+                        <strong>Maria do Perpétuo S. S. Nóbrega</strong>
+                        <br/>
+                        <br/>
+                        Departamento: ENP  <br/>
+                        E-mail: <a href="mailto:perpetua.nobrega@usp.br">perpetua.nobrega@usp.br</a>
+                        <br/>
+                        <br/>
+
+                                                    <!--Currículo Lattes: <a href="/site/dcms/app/webroot/uploads//curriculos/http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4718161Y6">Clique aqui</a><br/>-->
+                            Currículo Lattes: <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4718161Y6" target="_blank">Clique aqui</a><br/>
+                        
+                                                                    </div>
+                </li>
+                            <li>
+                    <div class="img_lista_docente">
+                        <img src="/site/index.php/corpo_docente/display_img/55" width="108"/>
+                    </div>
+                    <div class="texto_lista_docente">
+                        <strong>Maria Julia Paes da Silva (Docente Sênior)</strong>
+                        <br/>
+                        <br/>
+                        Departamento: ENC  <br/>
+                        E-mail: <a href="mailto: juliaps@usp.br"> juliaps@usp.br</a>
+                        <br/>
+                        <br/>
+
+                                                    <!--Currículo Lattes: <a href="/site/dcms/app/webroot/uploads//curriculos/http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4720535J9">Clique aqui</a><br/>-->
+                            Currículo Lattes: <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4720535J9" target="_blank">Clique aqui</a><br/>
+                        
+                                                                    </div>
+                </li>
+                            <li>
+                    <div class="img_lista_docente">
+                        <img src="/site/index.php/corpo_docente/display_img/56" width="108"/>
+                    </div>
+                    <div class="texto_lista_docente">
+                        <strong>Maria Luiza Gonzalez Riesco Bellini</strong>
+                        <br/>
+                        <br/>
+                        Departamento: ENP  <br/>
+                        E-mail: <a href="mailto: riesco@usp.br"> riesco@usp.br</a>
+                        <br/>
+                        <br/>
+
+                                                    <!--Currículo Lattes: <a href="/site/dcms/app/webroot/uploads//curriculos/http://lattes.cnpq.br/7003326861531283">Clique aqui</a><br/>-->
+                            Currículo Lattes: <a href="http://lattes.cnpq.br/7003326861531283" target="_blank">Clique aqui</a><br/>
+                        
+                                                                    </div>
+                </li>
+                            <li>
+                    <div class="img_lista_docente">
+                        <img src="/site/index.php/corpo_docente/display_img/57" width="108"/>
+                    </div>
+                    <div class="texto_lista_docente">
+                        <strong>Maria Madalena Januario Leite</strong>
+                        <br/>
+                        <br/>
+                        Departamento: ENO <br/>
+                        E-mail: <a href="mailto:marimada@usp.br">marimada@usp.br</a>
+                        <br/>
+                        <br/>
+
+                                                    <!--Currículo Lattes: <a href="/site/dcms/app/webroot/uploads//curriculos/http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4767547Z0">Clique aqui</a><br/>-->
+                            Currículo Lattes: <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4767547Z0" target="_blank">Clique aqui</a><br/>
+                        
+                                                                    </div>
+                </li>
+                            <li>
+                    <div class="img_lista_docente">
+                        <img src="/site/index.php/corpo_docente/display_img/59" width="108"/>
+                    </div>
+                    <div class="texto_lista_docente">
+                        <strong>Maria Rita Bertolozzi</strong>
+                        <br/>
+                        <br/>
+                        Departamento: ENS <br/>
+                        E-mail: <a href="mailto: mrbertol@usp.br"> mrbertol@usp.br</a>
+                        <br/>
+                        <br/>
+
+                                                    <!--Currículo Lattes: <a href="/site/dcms/app/webroot/uploads//curriculos/http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4703276P3">Clique aqui</a><br/>-->
+                            Currículo Lattes: <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4703276P3" target="_blank">Clique aqui</a><br/>
+                        
+                                                                    </div>
+                </li>
+                            <li>
+                    <div class="img_lista_docente">
+                        <img src="/site/index.php/corpo_docente/display_img/102" width="108"/>
+                    </div>
+                    <div class="texto_lista_docente">
+                        <strong>Marina de Góes Salvetti</strong>
+                        <br/>
+                        <br/>
+                        Departamento: ENC  <br/>
+                        E-mail: <a href="mailto: mgsalvetti@usp.br"> mgsalvetti@usp.br</a>
+                        <br/>
+                        <br/>
+
+                                                    <!--Currículo Lattes: <a href="/site/dcms/app/webroot/uploads//curriculos/http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4776902Z5">Clique aqui</a><br/>-->
+                            Currículo Lattes: <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4776902Z5" target="_blank">Clique aqui</a><br/>
+                        
+                                                                    </div>
+                </li>
+                            <li>
+                    <div class="img_lista_docente">
+                        <img src="/site/index.php/corpo_docente/display_img/61" width="108"/>
+                    </div>
+                    <div class="texto_lista_docente">
+                        <strong>Marina Peduzzi</strong>
+                        <br/>
+                        <br/>
+                        Departamento: ENO <br/>
+                        E-mail: <a href="mailto:marinape@usp.br">marinape@usp.br</a>
+                        <br/>
+                        <br/>
+
+                                                    <!--Currículo Lattes: <a href="/site/dcms/app/webroot/uploads//curriculos/http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4795737T4">Clique aqui</a><br/>-->
+                            Currículo Lattes: <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4795737T4" target="_blank">Clique aqui</a><br/>
+                        
+                                                                    </div>
+                </li>
+            
+        </ul>
+        <div class="clear"></div>
+    </div>
+
+    <div class="clear"></div>
+    <div class="paging">
+    <ul>
+                    <li><span><a href="/site/index.php/corpo_docente/index/page:4" class="prev">&lt;&lt; </a></span></li>
+                
+                    <li>| <span><a href="/site/index.php/corpo_docente/index/page:1">1</a></span> | <span><a href="/site/index.php/corpo_docente/index/page:2">2</a></span> | <span><a href="/site/index.php/corpo_docente/index/page:3">3</a></span> | <span><a href="/site/index.php/corpo_docente/index/page:4">4</a></span> | <span class="current">5</span> | <span><a href="/site/index.php/corpo_docente/index/page:6">6</a></span> | <span><a href="/site/index.php/corpo_docente/index/page:7">7</a></span> | <span><a href="/site/index.php/corpo_docente/index/page:8">8</a></span></li>
+                
+                <li><span><a href="/site/index.php/corpo_docente/index/page:6" class="next"> &gt;&gt;</a></span></li>
+            </ul>
+</div></div>
+<!-- /CORPO DOCENTE-->
+
+<script>
+    $(document).ready(function(){
+        
+        $('#BuscaDepartamentoId').change(function(){
+            $('#frmDpto2').submit();
+        });
+        
+    });
+
+</script>            <div class="clear"></div>
+        </div>
+        ﻿<!-- FOOTER -->
+
+<div id="footer">
+    <div class="structure_logo_menu">
+        <div class="logo_ee_usp_footer"></div>
+        <a href="#" alt="USP" title="USP">
+            <div class="usp_logo_footer"></div>
+        </a>
+        <div class="structure_menu_footer">
+            <ul>
+                <li><a href="/site/index.php/">Home</a></li>
+                <li>|</li>
+                <li><a href="http://www.ee.usp.br/site/Index.php//paginas/mostrar/1315/39">Direitos Autorais</a></li>
+                <li>|</li>
+                <li><a href="http://www.ee.usp.br/site/Index.php//paginas/mostrar/1316/39">Créditos</a></li>
+                <li>|</li>
+                <li><a href="/site/index.php/">Mapa</a></li>
+                <li>|</li>
+                <li><a href="http://www.ee.usp.br/site/Index.php//paginas/mostrar/1672/">Normas</a></li>
+                <li>|</li>
+                <li><a href="/site/index.php/contato">Fale Conosco</a></li>
+				
+            </ul>
+        </div>
+    </div>
+    <div class="structure_address">
+        <div class="direitos">
+            © 2009 - 2018   USP - Universidade de São Paulo - EEUSP
+        </div>
+        <div class="address_footer">
+            EEUSP - Av. Dr. Enéas de Carvalho Aguiar, 419 - 05403-000 - São Paulo - SP - E-mail: <a href="mailto:ee@usp.br">ee@usp.br</a>
+        </div>
+        <div class="clear"></div>
+        <a href="http://www.dennova.com.br" target="blanck" title="Dennova">
+            <div class="assinatura_dennova"></div>
+        </a>
+    </div>
+</div>
+<div class="orange_footer"></div>
+
+<!-- /FOOTER -->
+        <!-- /container -->
+                
+    </body>
+</html>

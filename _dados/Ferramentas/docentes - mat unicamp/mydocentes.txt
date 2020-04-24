@@ -1,0 +1,117 @@
+Ademir J. Petenate;ademir@ime.unicamp.br
+Ademir Pastor Ferreira;apastor@ime.unicamp.br
+Adriano A. Moura;aamoura@ime.unicamp.br
+Adriano Da Silva;ajsilva@ime.unicamp.br
+Alberto Saa;asaa@ime.unicamp.br
+Alessio Fiscella;fiscella@ime.unicamp.br
+Aluísio S. Pinheiro;pinheiro@ime.unicamp.br
+Anne Caroline Bronzi;annebronzi@ime.unicamp.br
+Antônio Carlos Moretti;moretti@ime.unicamp.br
+Artem Lopatin;alopatin@ime.unicamp.br
+Aurélio R. L. Oliveira;aurelio@ime.unicamp.br
+Benilton de Sá Carvalho;benilton@ime.unicamp.br
+Benjamin Bordin;bordin@ime.unicamp.br
+Bianca M. R. Calsavara;bianca@ime.unicamp.br
+Caio J. C. Negreiros;caione@ime.unicamp.br
+Caio L. N. Azevedo;cnaber@ime.unicamp.br
+Carlile Lavor;clavor@ime.unicamp.br
+Christian H. Olivera;colivera@ime.unicamp.br
+Christian S. Rodrigues;rodrigues@ime.unicamp.br
+Christophe F. Gallesco;gallesco@ime.unicamp.br
+Claudina I. Rodrigues;claudina@ime.unicamp.br
+Dessislava Kochloukova;desi@ime.unicamp.br
+Dicesar L. Fernandez;dicesar@ime.unicamp.br
+Diego F. Bernardini;bernardini@ime.unicamp.br
+Diego S. Ledesma;dledesma@ime.unicamp.br
+Djairo G. Figueiredo;djairo@ime.unicamp.br
+Douglas D. Novaes;ddnovaes@ime.unicamp.br
+Edmundo Capelas de Oliveira;capelas@ime.unicamp.br
+Eduardo Abreu;eabreu@ime.unicamp.br
+Eduardo Garibaldi;garibaldi@ime.unicamp.br
+Élcio Lebensztayn;lebensztayn@ime.unicamp.br
+Estevão E. Laureano;eelaureano@ime.unicamp.br
+Fernando Torres;ftorres@ime.unicamp.br
+Filidor E. Labra;fily@ime.unicamp.br
+Francesco Matucci;francesco@ime.unicamp.br
+Francesco Mercuri;mercuri@ime.unicamp.br
+Francisco A. M. Gomes Neto;chico@ime.unicamp.br
+Gabriel Ponce;gaponce@ime.unicamp.br
+Gabriela V. Planas;gplanas@ime.unicamp.br
+Giuseppe Romanazzi;roman@ime.unicamp.br
+Guilherme V. Nunes Ludwig;gvludwig@ime.unicamp.br
+Henrique N. Sá Earp;henrique.saearp@ime.unicamp.br
+Hildete P. Pinheiro;hildete@ime.unicamp.br
+Hyun Mo Yang;hyunyang@ime.unicamp.br
+Jayme Vaz Jr.;vaz@ime.unicamp.br
+Jesús E. Garcia;jg@ime.unicamp.br
+Joachim Weber;joa@ime.unicamp.br
+João B. Florindo;jbflorindo@ime.unicamp.br
+João Frederico C. A. Meyer;joni@ime.unicamp.br
+João Paulo Pitelli Manoel;pitelli@ime.unicamp.br
+Joerg Schleicher;js@ime.unicamp.br
+José M. Martinez;martinez@ime.unicamp.br
+José Plínio O. Santos;josepli@ime.unicamp.br
+José Regis A. Varão Filho;regisvarao@ime.unicamp.br
+Kelly Cristina Poldi;kellypoldi@ime.unicamp.br
+Ketty A. Rezende;ketty@ime.unicamp.br
+Laécio C. Barros;laeciocb@ime.unicamp.br
+Laércio L. Vendite;vendite@ime.unicamp.br
+Larissa A. Matos;larissam@ime.unicamp.br
+Laura Rifo;laurarifo@ime.unicamp.br
+Lino A. S. Grama;lino@ime.unicamp.br
+Lucas C. F. Ferreira;lcff@ime.unicamp.br
+Lúcio Centrone;centrone@ime.unicamp.br
+Lúcio T. Santos;lucio@ime.unicamp.br
+Luiz A. B. San Martin;smartin@ime.unicamp.br
+Luiz K. Hotta;hotta@ime.unicamp.br
+Mahendra P. Panthee;mpanthee@ime.unicamp.br
+Maicon R. Correa;maicon@ime.unicamp.br
+Marcelo Firer;mfirer@ime.unicamp.br
+Marcelo M. Santos;msantos@ime.unicamp.br
+Marcelo S. Montenegro;msm@ime.unicamp.br
+Marcelo Terra Cunha;tcunha@ime.unicamp.br
+Márcia A. G. Ruggiero;marcia@ime.unicamp.br
+Márcia A. G. Scialom;scialom@ime.unicamp.br
+Márcio A. Faria Rosa;marcio@ime.unicamp.br
+Marco A. Teixeira;teixeira@ime.unicamp.br
+Marcos B. Jardim;jardim@ime.unicamp.br
+Marcos E. Valle Mesquita;valle@ime.unicamp.br
+Maria Amélia N. Schleicher;amelia@ime.unicamp.br
+Maria A. D. Ehrhardt (Cheti);cheti@ime.unicamp.br
+Maria Lúcia B. Queiroz;mlucia@ime.unicamp.br
+Maria Sueli M. Roversi;marconi@ime.unicamp.br
+Mariana R. Motta;marianar@ime.unicamp.br
+Marina Vachkovskaia;marinav@ime.unicamp.br
+Mauricio E. Zevallos Herencia;amadeus@ime.unicamp.br
+Nancy L. Garcia;nancy@ime.unicamp.br
+Olivâine S. Queiroz;olivaine@ime.unicamp.br
+Otilia T. W. Paques;otilia@ime.unicamp.br
+Paulo J. S. Silva;pjssilva@ime.unicamp.br
+Paulo R. C. Ruffino;ruffino@ime.unicamp.br
+Pedro J. Catuogno;pedrojc@ime.unicamp.br
+Peter Sussner;sussner@ime.unicamp.br
+Plamen E. Kochloukov;plamen@ime.unicamp.br
+Rafael P. Maia;rafaelmaia@ime.unicamp.br
+Rafael F. Leão;leao@ime.unicamp.br
+Ricardo A. Mosna;mosna@ime.unicamp.br
+Ricardo Biloti;biloti@ime.unicamp.br
+Ricardo Miranda Martins;rmiranda@ime.unicamp.br
+Roberto Andreani;andreani@ime.unicamp.br
+Rodney C. Bassanezi;rodney@ime.unicamp.br
+Ronaldo Dias;dias@ime.unicamp.br
+Saeed Tafazolian;tafazolian@ime.unicamp.br
+Sahibzada Waleed Noor;waleed@ime.unicamp.br
+Samara F. Kiihl;samara@ime.unicamp.br
+Samuel R. Oliveira;samuel@ime.unicamp.br
+Sandra A. Santos;sandra@ime.unicamp.br
+Sebastião Amorim;amorim@ime.unicamp.br
+Sérgio A. Tozoni;tozoni@ime.unicamp.br
+Serguei Popov;popov@ime.unicamp.br
+Simone Marchesi;marchesi@ime.unicamp.br
+Sônia M. Gomes;soniag@ime.unicamp.br
+Stefano De Leo;deleo@ime.unicamp.br
+Sueli I. R. Costa;sueli@ime.unicamp.br
+Tatiana Benaglia;tatiana@ime.unicamp.br
+Verónica A. González-Lopez;veronica@ime.unicamp.br
+Wilson C. Ferreira Jr.;wilson@ime.unicamp.br
+Yuri Bozhkov;bozhkov@ime.unicamp.br

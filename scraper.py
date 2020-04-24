@@ -1,3 +1,5 @@
+#command to run this:
+# $ scrapy runspider scraper.py
 import scrapy
 
 class BrickSetSpider(scrapy.Spider):

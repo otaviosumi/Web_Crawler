@@ -36,6 +36,7 @@ Este projeto necessita de algumas bibliotecas e recursos instalados para que fun
 | pyasn1-modules   	| 0.2.8                        	|
 | pycparser        	| 2.20                         	|
 | queuelib         	| 1.5.0                        	|
+|selenium	        | 3.141.0                        |	      
 | service-identity 	| 18.1.0                       	|
 | setuptools       	| 46.1.3                       	|
 | six              	| 1.14.0                       	|
