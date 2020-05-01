@@ -1,0 +1,753 @@
+Index: venv/Lib/site-packages/twisted/python/test/_deprecatetests.py.3only
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/Lib/site-packages/twisted/python/test/_deprecatetests.py.3only	(date 1588348504237)
++++ venv/Lib/site-packages/twisted/python/test/_deprecatetests.py.3only	(date 1588348504237)
+@@ -0,0 +1,56 @@
++# Copyright (c) Twisted Matrix Laboratories.
++# See LICENSE for details.
++
++import inspect
++
++from twisted.python.deprecate import _passedSignature
++from twisted.trial.unittest import SynchronousTestCase
++
++
++class KeywordOnlyTests(SynchronousTestCase):
++    """
++    Keyword only arguments (PEP 3102).
++    """
++    def checkPassed(self, func, *args, **kw):
++        """
++        Test an invocation of L{passed} with the given function, arguments, and
++        keyword arguments.
++
++        @param func: A function whose argspec to pass to L{_passed}.
++        @type func: A callable.
++
++        @param args: The arguments which could be passed to L{func}.
++
++        @param kw: The keyword arguments which could be passed to L{func}.
++
++        @return: L{_passed}'s return value
++        @rtype: L{dict}
++        """
++        return _passedSignature(inspect.signature(func), args, kw)
++
++
++    def test_passedKeywordOnly(self):
++        """
++        Keyword only arguments follow varargs.
++        They are specified in PEP 3102.
++        """
++        def func1(*a, b=True):
++            """
++            b is a keyword-only argument, with a default value.
++            """
++
++        def func2(*a, b=True, c, d, e):
++            """
++            b, c, d, e  are keyword-only arguments.
++            b has a default value.
++            """
++
++        self.assertEqual(self.checkPassed(func1, 1, 2, 3),
++                         dict(a=(1, 2, 3), b=True))
++        self.assertEqual(self.checkPassed(func1, 1, 2, 3, b=False),
++                         dict(a=(1, 2, 3), b=False))
++        self.assertEqual(self.checkPassed(func2,
++                         1, 2, b=False, c=1, d=2, e=3),
++                         dict(a=(1, 2), b=False, c=1, d=2, e=3))
++        self.assertRaises(TypeError, self.checkPassed,
++                          func2, 1, 2, b=False, c=1, d=2)
+Index: venv/Lib/site-packages/selenium-3.141.0.dist-info/INSTALLER
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/Lib/site-packages/selenium-3.141.0.dist-info/INSTALLER	(date 1588348492040)
++++ venv/Lib/site-packages/selenium-3.141.0.dist-info/INSTALLER	(date 1588348492040)
+@@ -0,0 +1,1 @@
++pip
+Index: venv/Lib/site-packages/selenium-3.141.0.dist-info/LICENSE
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/Lib/site-packages/selenium-3.141.0.dist-info/LICENSE	(date 1588348489287)
++++ venv/Lib/site-packages/selenium-3.141.0.dist-info/LICENSE	(date 1588348489287)
+@@ -0,0 +1,202 @@
++
++                                 Apache License
++                           Version 2.0, January 2004
++                        http://www.apache.org/licenses/
++
++   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
++
++   1. Definitions.
++
++      "License" shall mean the terms and conditions for use, reproduction,
++      and distribution as defined by Sections 1 through 9 of this document.
++
++      "Licensor" shall mean the copyright owner or entity authorized by
++      the copyright owner that is granting the License.
++
++      "Legal Entity" shall mean the union of the acting entity and all
++      other entities that control, are controlled by, or are under common
++      control with that entity. For the purposes of this definition,
++      "control" means (i) the power, direct or indirect, to cause the
++      direction or management of such entity, whether by contract or
++      otherwise, or (ii) ownership of fifty percent (50%) or more of the
++      outstanding shares, or (iii) beneficial ownership of such entity.
++
++      "You" (or "Your") shall mean an individual or Legal Entity
++      exercising permissions granted by this License.
++
++      "Source" form shall mean the preferred form for making modifications,
++      including but not limited to software source code, documentation
++      source, and configuration files.
++
++      "Object" form shall mean any form resulting from mechanical
++      transformation or translation of a Source form, including but
++      not limited to compiled object code, generated documentation,
++      and conversions to other media types.
++
++      "Work" shall mean the work of authorship, whether in Source or
++      Object form, made available under the License, as indicated by a
++      copyright notice that is included in or attached to the work
++      (an example is provided in the Appendix below).
++
++      "Derivative Works" shall mean any work, whether in Source or Object
++      form, that is based on (or derived from) the Work and for which the
++      editorial revisions, annotations, elaborations, or other modifications
++      represent, as a whole, an original work of authorship. For the purposes
++      of this License, Derivative Works shall not include works that remain
++      separable from, or merely link (or bind by name) to the interfaces of,
++      the Work and Derivative Works thereof.
++
++      "Contribution" shall mean any work of authorship, including
++      the original version of the Work and any modifications or additions
++      to that Work or Derivative Works thereof, that is intentionally
++      submitted to Licensor for inclusion in the Work by the copyright owner
++      or by an individual or Legal Entity authorized to submit on behalf of
++      the copyright owner. For the purposes of this definition, "submitted"
++      means any form of electronic, verbal, or written communication sent
++      to the Licensor or its representatives, including but not limited to
++      communication on electronic mailing lists, source code control systems,
++      and issue tracking systems that are managed by, or on behalf of, the
++      Licensor for the purpose of discussing and improving the Work, but
++      excluding communication that is conspicuously marked or otherwise
++      designated in writing by the copyright owner as "Not a Contribution."
++
++      "Contributor" shall mean Licensor and any individual or Legal Entity
++      on behalf of whom a Contribution has been received by Licensor and
++      subsequently incorporated within the Work.
++
++   2. Grant of Copyright License. Subject to the terms and conditions of
++      this License, each Contributor hereby grants to You a perpetual,
++      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
++      copyright license to reproduce, prepare Derivative Works of,
++      publicly display, publicly perform, sublicense, and distribute the
++      Work and such Derivative Works in Source or Object form.
++
++   3. Grant of Patent License. Subject to the terms and conditions of
++      this License, each Contributor hereby grants to You a perpetual,
++      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
++      (except as stated in this section) patent license to make, have made,
++      use, offer to sell, sell, import, and otherwise transfer the Work,
++      where such license applies only to those patent claims licensable
++      by such Contributor that are necessarily infringed by their
++      Contribution(s) alone or by combination of their Contribution(s)
++      with the Work to which such Contribution(s) was submitted. If You
++      institute patent litigation against any entity (including a
++      cross-claim or counterclaim in a lawsuit) alleging that the Work
++      or a Contribution incorporated within the Work constitutes direct
++      or contributory patent infringement, then any patent licenses
++      granted to You under this License for that Work shall terminate
++      as of the date such litigation is filed.
++
++   4. Redistribution. You may reproduce and distribute copies of the
++      Work or Derivative Works thereof in any medium, with or without
++      modifications, and in Source or Object form, provided that You
++      meet the following conditions:
++
++      (a) You must give any other recipients of the Work or
++          Derivative Works a copy of this License; and
++
++      (b) You must cause any modified files to carry prominent notices
++          stating that You changed the files; and
++
++      (c) You must retain, in the Source form of any Derivative Works
++          that You distribute, all copyright, patent, trademark, and
++          attribution notices from the Source form of the Work,
++          excluding those notices that do not pertain to any part of
++          the Derivative Works; and
++
++      (d) If the Work includes a "NOTICE" text file as part of its
++          distribution, then any Derivative Works that You distribute must
++          include a readable copy of the attribution notices contained
++          within such NOTICE file, excluding those notices that do not
++          pertain to any part of the Derivative Works, in at least one
++          of the following places: within a NOTICE text file distributed
++          as part of the Derivative Works; within the Source form or
++          documentation, if provided along with the Derivative Works; or,
++          within a display generated by the Derivative Works, if and
++          wherever such third-party notices normally appear. The contents
++          of the NOTICE file are for informational purposes only and
++          do not modify the License. You may add Your own attribution
++          notices within Derivative Works that You distribute, alongside
++          or as an addendum to the NOTICE text from the Work, provided
++          that such additional attribution notices cannot be construed
++          as modifying the License.
++
++      You may add Your own copyright statement to Your modifications and
++      may provide additional or different license terms and conditions
++      for use, reproduction, or distribution of Your modifications, or
++      for any such Derivative Works as a whole, provided Your use,
++      reproduction, and distribution of the Work otherwise complies with
++      the conditions stated in this License.
++
++   5. Submission of Contributions. Unless You explicitly state otherwise,
++      any Contribution intentionally submitted for inclusion in the Work
++      by You to the Licensor shall be under the terms and conditions of
++      this License, without any additional terms or conditions.
++      Notwithstanding the above, nothing herein shall supersede or modify
++      the terms of any separate license agreement you may have executed
++      with Licensor regarding such Contributions.
++
++   6. Trademarks. This License does not grant permission to use the trade
++      names, trademarks, service marks, or product names of the Licensor,
++      except as required for reasonable and customary use in describing the
++      origin of the Work and reproducing the content of the NOTICE file.
++
++   7. Disclaimer of Warranty. Unless required by applicable law or
++      agreed to in writing, Licensor provides the Work (and each
++      Contributor provides its Contributions) on an "AS IS" BASIS,
++      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
++      implied, including, without limitation, any warranties or conditions
++      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
++      PARTICULAR PURPOSE. You are solely responsible for determining the
++      appropriateness of using or redistributing the Work and assume any
++      risks associated with Your exercise of permissions under this License.
++
++   8. Limitation of Liability. In no event and under no legal theory,
++      whether in tort (including negligence), contract, or otherwise,
++      unless required by applicable law (such as deliberate and grossly
++      negligent acts) or agreed to in writing, shall any Contributor be
++      liable to You for damages, including any direct, indirect, special,
++      incidental, or consequential damages of any character arising as a
++      result of this License or out of the use or inability to use the
++      Work (including but not limited to damages for loss of goodwill,
++      work stoppage, computer failure or malfunction, or any and all
++      other commercial damages or losses), even if such Contributor
++      has been advised of the possibility of such damages.
++
++   9. Accepting Warranty or Additional Liability. While redistributing
++      the Work or Derivative Works thereof, You may choose to offer,
++      and charge a fee for, acceptance of support, warranty, indemnity,
++      or other liability obligations and/or rights consistent with this
++      License. However, in accepting such obligations, You may act only
++      on Your own behalf and on Your sole responsibility, not on behalf
++      of any other Contributor, and only if You agree to indemnify,
++      defend, and hold each Contributor harmless for any liability
++      incurred by, or claims asserted against, such Contributor by reason
++      of your accepting any such warranty or additional liability.
++
++   END OF TERMS AND CONDITIONS
++
++   APPENDIX: How to apply the Apache License to your work.
++
++      To apply the Apache License to your work, attach the following
++      boilerplate notice, with the fields enclosed by brackets "[]"
++      replaced with your own identifying information. (Don't include
++      the brackets!)  The text should be enclosed in the appropriate
++      comment syntax for the file format. We also recommend that a
++      file or class name and description of purpose be included on the
++      same "printed page" as the copyright notice for easier
++      identification within third-party archives.
++
++   Copyright 2018 Software Freedom Conservancy (SFC)
++
++   Licensed under the Apache License, Version 2.0 (the "License");
++   you may not use this file except in compliance with the License.
++   You may obtain a copy of the License at
++
++       http://www.apache.org/licenses/LICENSE-2.0
++
++   Unless required by applicable law or agreed to in writing, software
++   distributed under the License is distributed on an "AS IS" BASIS,
++   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
++   See the License for the specific language governing permissions and
++   limitations under the License.
+Index: venv/Lib/site-packages/selenium-3.141.0.dist-info/METADATA
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/Lib/site-packages/selenium-3.141.0.dist-info/METADATA	(date 1588348489288)
++++ venv/Lib/site-packages/selenium-3.141.0.dist-info/METADATA	(date 1588348489288)
+@@ -0,0 +1,171 @@
++Metadata-Version: 2.1
++Name: selenium
++Version: 3.141.0
++Summary: Python bindings for Selenium
++Home-page: https://github.com/SeleniumHQ/selenium/
++Author: UNKNOWN
++Author-email: UNKNOWN
++License: Apache 2.0
++Platform: UNKNOWN
++Classifier: Development Status :: 5 - Production/Stable
++Classifier: Intended Audience :: Developers
++Classifier: License :: OSI Approved :: Apache Software License
++Classifier: Operating System :: POSIX
++Classifier: Operating System :: Microsoft :: Windows
++Classifier: Operating System :: MacOS :: MacOS X
++Classifier: Topic :: Software Development :: Testing
++Classifier: Topic :: Software Development :: Libraries
++Classifier: Programming Language :: Python
++Classifier: Programming Language :: Python :: 2.7
++Classifier: Programming Language :: Python :: 3.4
++Classifier: Programming Language :: Python :: 3.5
++Classifier: Programming Language :: Python :: 3.6
++Requires-Dist: urllib3
++
++======================
++Selenium Client Driver
++======================
++
++Introduction
++============
++
++Python language bindings for Selenium WebDriver.
++
++The `selenium` package is used to automate web browser interaction from Python.
++
+++-----------+--------------------------------------------------------------------------------------+
++| **Home**: | http://www.seleniumhq.org                                                            |
+++-----------+--------------------------------------------------------------------------------------+
++| **Docs**: | `selenium package API <https://seleniumhq.github.io/selenium/docs/api/py/api.html>`_ |
+++-----------+--------------------------------------------------------------------------------------+
++| **Dev**:  | https://github.com/SeleniumHQ/Selenium                                               |
+++-----------+--------------------------------------------------------------------------------------+
++| **PyPI**: | https://pypi.org/project/selenium/                                                   |
+++-----------+--------------------------------------------------------------------------------------+
++| **IRC**:  | **#selenium** channel on freenode                                                    |
+++-----------+--------------------------------------------------------------------------------------+
++
++Several browsers/drivers are supported (Firefox, Chrome, Internet Explorer), as well as the Remote protocol.
++
++Supported Python Versions
++=========================
++
++* Python 2.7, 3.4+
++
++Installing
++==========
++
++If you have `pip <https://pip.pypa.io/>`_ on your system, you can simply install or upgrade the Python bindings::
++
++    pip install -U selenium
++
++Alternately, you can download the source distribution from `PyPI <https://pypi.org/project/selenium/#files>`_ (e.g. selenium-3.141.0.tar.gz), unarchive it, and run::
++
++    python setup.py install
++
++Note: You may want to consider using `virtualenv <http://www.virtualenv.org/>`_ to create isolated Python environments.
++
++Drivers
++=======
++
++Selenium requires a driver to interface with the chosen browser. Firefox,
++for example, requires `geckodriver <https://github.com/mozilla/geckodriver/releases>`_, which needs to be installed before the below examples can be run. Make sure it's in your `PATH`, e. g., place it in `/usr/bin` or `/usr/local/bin`.
++
++Failure to observe this step will give you an error `selenium.common.exceptions.WebDriverException: Message: 'geckodriver' executable needs to be in PATH.`
++
++Other supported browsers will have their own drivers available. Links to some of the more popular browser drivers follow.
++
+++--------------+-----------------------------------------------------------------------+
++| **Chrome**:  | https://sites.google.com/a/chromium.org/chromedriver/downloads        |
+++--------------+-----------------------------------------------------------------------+
++| **Edge**:    | https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/ |
+++--------------+-----------------------------------------------------------------------+
++| **Firefox**: | https://github.com/mozilla/geckodriver/releases                       |
+++--------------+-----------------------------------------------------------------------+
++| **Safari**:  | https://webkit.org/blog/6900/webdriver-support-in-safari-10/          |
+++--------------+-----------------------------------------------------------------------+
++
++Example 0:
++==========
++
++* open a new Firefox browser
++* load the page at the given URL
++
++.. code-block:: python
++
++    from selenium import webdriver
++
++    browser = webdriver.Firefox()
++    browser.get('http://seleniumhq.org/')
++
++Example 1:
++==========
++
++* open a new Firefox browser
++* load the Yahoo homepage
++* search for "seleniumhq"
++* close the browser
++
++.. code-block:: python
++
++    from selenium import webdriver
++    from selenium.webdriver.common.keys import Keys
++
++    browser = webdriver.Firefox()
++
++    browser.get('http://www.yahoo.com')
++    assert 'Yahoo' in browser.title
++
++    elem = browser.find_element_by_name('p')  # Find the search box
++    elem.send_keys('seleniumhq' + Keys.RETURN)
++
++    browser.quit()
++
++Example 2:
++==========
++
++Selenium WebDriver is often used as a basis for testing web applications.  Here is a simple example using Python's standard `unittest <http://docs.python.org/3/library/unittest.html>`_ library:
++
++.. code-block:: python
++
++    import unittest
++    from selenium import webdriver
++
++    class GoogleTestCase(unittest.TestCase):
++
++        def setUp(self):
++            self.browser = webdriver.Firefox()
++            self.addCleanup(self.browser.quit)
++
++        def testPageTitle(self):
++            self.browser.get('http://www.google.com')
++            self.assertIn('Google', self.browser.title)
++
++    if __name__ == '__main__':
++        unittest.main(verbosity=2)
++
++Selenium Server (optional)
++==========================
++
++For normal WebDriver scripts (non-Remote), the Java server is not needed.
++
++However, to use Selenium Webdriver Remote or the legacy Selenium API (Selenium-RC), you need to also run the Selenium server.  The server requires a Java Runtime Environment (JRE).
++
++Download the server separately, from: http://selenium-release.storage.googleapis.com/3.141/selenium-server-standalone-3.141.0.jar
++
++Run the server from the command line::
++
++    java -jar selenium-server-standalone-3.141.0.jar
++
++Then run your Python client scripts.
++
++Use The Source Luke!
++====================
++
++View source code online:
++
+++-----------+-------------------------------------------------------+
++| official: | https://github.com/SeleniumHQ/selenium/tree/master/py |
+++-----------+-------------------------------------------------------+
++
++
+Index: venv/Lib/site-packages/selenium-3.141.0.dist-info/RECORD
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/Lib/site-packages/selenium-3.141.0.dist-info/RECORD	(date 1588348492111)
++++ venv/Lib/site-packages/selenium-3.141.0.dist-info/RECORD	(date 1588348492111)
+@@ -0,0 +1,182 @@
++selenium-3.141.0.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
++selenium-3.141.0.dist-info/LICENSE,sha256=nIO72GZ6Z7Lad2jSmtue82mLJyCjgKl_Gt8iRURSwvU,11365
++selenium-3.141.0.dist-info/METADATA,sha256=TBrLl5AFOruU-rAPzCHxwwO0-fyouPdnFpAY0sIYtvw,6553
++selenium-3.141.0.dist-info/RECORD,,
++selenium-3.141.0.dist-info/WHEEL,sha256=8T8fxefr_r-A79qbOJ9d_AaEgkpCGmEPHc-gpCq5BRg,110
++selenium-3.141.0.dist-info/top_level.txt,sha256=h_bHiVqSBt4ebSallLryIo7BkFqIehRmrWlnccPYc5M,9
++selenium/__init__.py,sha256=ivKrIxicNwGMCVkJUlUfMSzglBcjqpohr7qKb31xrl4,813
++selenium/__pycache__/__init__.cpython-37.pyc,,
++selenium/common/__init__.py,sha256=E_V8-VsmWsxJhOnXZn-72u9k_jCgBI6PjV7kEd7P8jA,821
++selenium/common/__pycache__/__init__.cpython-37.pyc,,
++selenium/common/__pycache__/exceptions.cpython-37.pyc,,
++selenium/common/exceptions.py,sha256=J07uP-vs00qcFYsylgi1q9BteIwqVIr1wKIRfGACiCI,9274
++selenium/webdriver/__init__.py,sha256=xOTI0V4LLgtTusXFiDErRCR_k7OlPbybRqbkyMYwAeo,1981
++selenium/webdriver/__pycache__/__init__.cpython-37.pyc,,
++selenium/webdriver/android/__init__.py,sha256=3TKaBBK08eiCsGGFFcZlZwwjHHcmj2YO0xImghpJk38,787
++selenium/webdriver/android/__pycache__/__init__.cpython-37.pyc,,
++selenium/webdriver/android/__pycache__/webdriver.cpython-37.pyc,,
++selenium/webdriver/android/webdriver.py,sha256=1Vz2GfYAvyUICUrs90HzD0LELUNhV9u1Sx2qT4uFOV0,1735
++selenium/webdriver/blackberry/__init__.py,sha256=3TKaBBK08eiCsGGFFcZlZwwjHHcmj2YO0xImghpJk38,787
++selenium/webdriver/blackberry/__pycache__/__init__.cpython-37.pyc,,
++selenium/webdriver/blackberry/__pycache__/webdriver.cpython-37.pyc,,
++selenium/webdriver/blackberry/webdriver.py,sha256=kkzKz_3qLB3nijgxlgbiKmqPusmvQdD3RQ6C7aClA-c,4870
++selenium/webdriver/chrome/__init__.py,sha256=3TKaBBK08eiCsGGFFcZlZwwjHHcmj2YO0xImghpJk38,787
++selenium/webdriver/chrome/__pycache__/__init__.cpython-37.pyc,,
++selenium/webdriver/chrome/__pycache__/options.cpython-37.pyc,,
++selenium/webdriver/chrome/__pycache__/remote_connection.cpython-37.pyc,,
++selenium/webdriver/chrome/__pycache__/service.cpython-37.pyc,,
++selenium/webdriver/chrome/__pycache__/webdriver.cpython-37.pyc,,
++selenium/webdriver/chrome/options.py,sha256=MzNz00TtRPe5nsRtdf8j1kq1wYptp6nMuNdE5d9PL0Q,6540
++selenium/webdriver/chrome/remote_connection.py,sha256=lWuXN-kWVUYHIpNmfory2-r2pFJzg_x6_Gfakcnva4A,1447
++selenium/webdriver/chrome/service.py,sha256=9XiAB3Xl2TT84fIUKQOBFZAGy0u-_epLVIE4fbE8R94,1817
++selenium/webdriver/chrome/webdriver.py,sha256=VHBNRB_LzDiyTXJ5hhBJI9GRkb_TIAKuu9X5UbDR8mw,6024
++selenium/webdriver/common/__init__.py,sha256=3TKaBBK08eiCsGGFFcZlZwwjHHcmj2YO0xImghpJk38,787
++selenium/webdriver/common/__pycache__/__init__.cpython-37.pyc,,
++selenium/webdriver/common/__pycache__/action_chains.cpython-37.pyc,,
++selenium/webdriver/common/__pycache__/alert.cpython-37.pyc,,
++selenium/webdriver/common/__pycache__/by.cpython-37.pyc,,
++selenium/webdriver/common/__pycache__/desired_capabilities.cpython-37.pyc,,
++selenium/webdriver/common/__pycache__/keys.cpython-37.pyc,,
++selenium/webdriver/common/__pycache__/proxy.cpython-37.pyc,,
++selenium/webdriver/common/__pycache__/service.cpython-37.pyc,,
++selenium/webdriver/common/__pycache__/touch_actions.cpython-37.pyc,,
++selenium/webdriver/common/__pycache__/utils.cpython-37.pyc,,
++selenium/webdriver/common/action_chains.py,sha256=75peC1roLCzop3ZkSqRcywZchPgm6YsZibMidF6H1Wc,12332
++selenium/webdriver/common/actions/__init__.py,sha256=3TKaBBK08eiCsGGFFcZlZwwjHHcmj2YO0xImghpJk38,787
++selenium/webdriver/common/actions/__pycache__/__init__.cpython-37.pyc,,
++selenium/webdriver/common/actions/__pycache__/action_builder.cpython-37.pyc,,
++selenium/webdriver/common/actions/__pycache__/input_device.cpython-37.pyc,,
++selenium/webdriver/common/actions/__pycache__/interaction.cpython-37.pyc,,
++selenium/webdriver/common/actions/__pycache__/key_actions.cpython-37.pyc,,
++selenium/webdriver/common/actions/__pycache__/key_input.cpython-37.pyc,,
++selenium/webdriver/common/actions/__pycache__/mouse_button.cpython-37.pyc,,
++selenium/webdriver/common/actions/__pycache__/pointer_actions.cpython-37.pyc,,
++selenium/webdriver/common/actions/__pycache__/pointer_input.cpython-37.pyc,,
++selenium/webdriver/common/actions/action_builder.py,sha256=Nh7voMkO4dNtZGR3vrhyDZHuaZ8-OGa6Kj87cdyP-Yw,2825
++selenium/webdriver/common/actions/input_device.py,sha256=oww3ycrYxOl3fhXqgWSiGybiVbBVIXaY5ldfWeTBBMw,1279
++selenium/webdriver/common/actions/interaction.py,sha256=Sy6iVy_-QuTU3Ap3VQJRQoyEmfpgMU2JSAxHYKWlJPA,1434
++selenium/webdriver/common/actions/key_actions.py,sha256=EJJl4YNg7a_g6vsXKoC-rJaA0YaMsY0V8w0tZArDSys,1733
++selenium/webdriver/common/actions/key_input.py,sha256=4PBRGhtLTIZR3Oe28P0ve7RwLWbavV4-W2viunAwQ5k,1782
++selenium/webdriver/common/actions/mouse_button.py,sha256=wgbmQEy-4vqthysQ2w8U0XC_IWYJ7S6s-rvsssslnqg,70
++selenium/webdriver/common/actions/pointer_actions.py,sha256=URJPzC9kz5uq9dnsLD3wmyzf79FJOBACppMMvMj97w4,3335
++selenium/webdriver/common/actions/pointer_input.py,sha256=Hk6iHcDE0rfv012lVbmX1w_EQTC1lGI2hGoXBYaxPCs,2459
++selenium/webdriver/common/alert.py,sha256=ahOGXUEb9XQWLqzn6X9n1kP665l9z3ARXjh28z3tFe8,3099
++selenium/webdriver/common/by.py,sha256=NrDsEfAwyuPqx74pw3febADe_fKi2mmZOZQvs3DI9qU,1111
++selenium/webdriver/common/desired_capabilities.py,sha256=s50bR1YbG1otMDlomPxULF1cc6R0FhIpveRWud0o3FE,3320
++selenium/webdriver/common/html5/__init__.py,sha256=3TKaBBK08eiCsGGFFcZlZwwjHHcmj2YO0xImghpJk38,787
++selenium/webdriver/common/html5/__pycache__/__init__.cpython-37.pyc,,
++selenium/webdriver/common/html5/__pycache__/application_cache.cpython-37.pyc,,
++selenium/webdriver/common/html5/application_cache.py,sha256=Ymy_azm2B6ZSM9H7RCcMfNzFRuccqIa9mpmZxTzdiBM,1430
++selenium/webdriver/common/keys.py,sha256=5TAevg0zOzSzqted-4DJxT-vufbS3B9PiGQtgeVWYgU,2347
++selenium/webdriver/common/proxy.py,sha256=SPScO5HA_UqPqFcO3JCgRpGXqo8qaQsA5KNRJX6c9B8,10311
++selenium/webdriver/common/service.py,sha256=n2Gp7SJQ9ld57SZJJjvrM5Eqc802Gs06Q52jm8SqOuk,5855
++selenium/webdriver/common/touch_actions.py,sha256=ttZ8N3W_AE_r_F_npLsDUjwJkcQ_KfTZdfRQk6LdpCg,5980
++selenium/webdriver/common/utils.py,sha256=Zq1OrBzV2h00ZHaaJa323nhoEnb2YKZ0aFcvJg3tXU4,4231
++selenium/webdriver/edge/__init__.py,sha256=3TKaBBK08eiCsGGFFcZlZwwjHHcmj2YO0xImghpJk38,787
++selenium/webdriver/edge/__pycache__/__init__.cpython-37.pyc,,
++selenium/webdriver/edge/__pycache__/options.cpython-37.pyc,,
++selenium/webdriver/edge/__pycache__/service.cpython-37.pyc,,
++selenium/webdriver/edge/__pycache__/webdriver.cpython-37.pyc,,
++selenium/webdriver/edge/options.py,sha256=CxzIBjKh5263O_VbFFHDjCDSPV8yttrc3Y585rflOl0,1831
++selenium/webdriver/edge/service.py,sha256=efzKanyRcFE0DThRZ3FOsRH2dcDdaqUiZkD6M75x21k,2161
++selenium/webdriver/edge/webdriver.py,sha256=b6bkZ_xd6oYgBHfKGY7iX9yjp2wv3mLU5blSAJgvuCE,3111
++selenium/webdriver/firefox/__init__.py,sha256=3TKaBBK08eiCsGGFFcZlZwwjHHcmj2YO0xImghpJk38,787
++selenium/webdriver/firefox/__pycache__/__init__.cpython-37.pyc,,
++selenium/webdriver/firefox/__pycache__/extension_connection.cpython-37.pyc,,
++selenium/webdriver/firefox/__pycache__/firefox_binary.cpython-37.pyc,,
++selenium/webdriver/firefox/__pycache__/firefox_profile.cpython-37.pyc,,
++selenium/webdriver/firefox/__pycache__/options.cpython-37.pyc,,
++selenium/webdriver/firefox/__pycache__/remote_connection.cpython-37.pyc,,
++selenium/webdriver/firefox/__pycache__/service.cpython-37.pyc,,
++selenium/webdriver/firefox/__pycache__/webdriver.cpython-37.pyc,,
++selenium/webdriver/firefox/__pycache__/webelement.cpython-37.pyc,,
++selenium/webdriver/firefox/amd64/x_ignore_nofocus.so,sha256=_rACRCJ5PFRrxrHwxMVQbUncne826HyeKoOLdbsltb8,41262
++selenium/webdriver/firefox/extension_connection.py,sha256=8taS3GwbA2PslwXtQ8Xbh6a4U_SJJRIMgpAeCKLrnPI,2875
++selenium/webdriver/firefox/firefox_binary.py,sha256=InWj6DP1BMOqBFerftMvUN1P8JH0fPcy7kKE2ryNnTc,8752
++selenium/webdriver/firefox/firefox_profile.py,sha256=HSKu7Xp1nIbHDgObv95KCA37lR9J9dFbC2QA3b5snj8,15997
++selenium/webdriver/firefox/options.py,sha256=7L_F1qZUPPN9Shh0JsXCqtZdlOE-TIMUaaXnSGQHFe4,5868
++selenium/webdriver/firefox/remote_connection.py,sha256=oHpJ-oTwa9Vca88nDr43id4ghTyCuPNkRu8MjX8hfJI,1719
++selenium/webdriver/firefox/service.py,sha256=_PD-Brf-VmpuJsxKPghlACWe7KG7VvdofaV_na7fpSE,2261
++selenium/webdriver/firefox/webdriver.py,sha256=TiFg67uBZObaQTBMAGMFpqSRJDVxPaYqiZ6fCGZYTyg,10727
++selenium/webdriver/firefox/webdriver.xpi,sha256=hto_oOBBf_iWadkP7en2tj89kDkH7L4lg89-SiXOPnA,716611
++selenium/webdriver/firefox/webdriver_prefs.json,sha256=lGrdKYpeI0bj1T0cvorXwz5JlBMFEfbYt5JovlC3o0w,2826
++selenium/webdriver/firefox/webelement.py,sha256=yq5TGrvlhgHZ-98vxGaURXDNwLhDS9IStpDEgvnC1bs,2023
++selenium/webdriver/firefox/x86/x_ignore_nofocus.so,sha256=sGarS2BVGdLrA7BwlEgcwCmXnDCW7fMmLGTaAoyq_tk,30887
++selenium/webdriver/ie/__init__.py,sha256=3TKaBBK08eiCsGGFFcZlZwwjHHcmj2YO0xImghpJk38,787
++selenium/webdriver/ie/__pycache__/__init__.cpython-37.pyc,,
++selenium/webdriver/ie/__pycache__/options.cpython-37.pyc,,
++selenium/webdriver/ie/__pycache__/service.cpython-37.pyc,,
++selenium/webdriver/ie/__pycache__/webdriver.cpython-37.pyc,,
++selenium/webdriver/ie/options.py,sha256=DpOL-fWXpO0eR__5u8EdlXdcjIrUaKzfPDi2VJFB7U0,10565
++selenium/webdriver/ie/service.py,sha256=xmLctjwk99y3GkboTsU_vYAdLsObWOx_tNtdQKxxVG0,2235
++selenium/webdriver/ie/webdriver.py,sha256=A_Nc43UkQpAqD4RdTDVv4gQFhDzs3MVLW6izXIebPd8,4366
++selenium/webdriver/opera/__init__.py,sha256=3TKaBBK08eiCsGGFFcZlZwwjHHcmj2YO0xImghpJk38,787
++selenium/webdriver/opera/__pycache__/__init__.cpython-37.pyc,,
++selenium/webdriver/opera/__pycache__/options.cpython-37.pyc,,
++selenium/webdriver/opera/__pycache__/webdriver.cpython-37.pyc,,
++selenium/webdriver/opera/options.py,sha256=PL0tLcGwHN-tX9F2aoOD2mHFJ5PlHxzxPLZ2CA9gYLg,3572
++selenium/webdriver/opera/webdriver.py,sha256=ud0ixfHHkPAExQ414LR9eS4DSw5IMqW7s55h8Wh67Kw,3555
++selenium/webdriver/phantomjs/__init__.py,sha256=3TKaBBK08eiCsGGFFcZlZwwjHHcmj2YO0xImghpJk38,787
++selenium/webdriver/phantomjs/__pycache__/__init__.cpython-37.pyc,,
++selenium/webdriver/phantomjs/__pycache__/service.cpython-37.pyc,,
++selenium/webdriver/phantomjs/__pycache__/webdriver.cpython-37.pyc,,
++selenium/webdriver/phantomjs/service.py,sha256=7ufko8h80dUTnI8ueP9ee01VKXNRs6fA-PwTzGRKVMQ,2587
++selenium/webdriver/phantomjs/webdriver.py,sha256=SqpeJjazxW_p9iQnEu20Zk6WD1m8SApzJM8_zGpZpSQ,3111
++selenium/webdriver/remote/__init__.py,sha256=3TKaBBK08eiCsGGFFcZlZwwjHHcmj2YO0xImghpJk38,787
++selenium/webdriver/remote/__pycache__/__init__.cpython-37.pyc,,
++selenium/webdriver/remote/__pycache__/command.cpython-37.pyc,,
++selenium/webdriver/remote/__pycache__/errorhandler.cpython-37.pyc,,
++selenium/webdriver/remote/__pycache__/file_detector.cpython-37.pyc,,
++selenium/webdriver/remote/__pycache__/mobile.cpython-37.pyc,,
++selenium/webdriver/remote/__pycache__/remote_connection.cpython-37.pyc,,
++selenium/webdriver/remote/__pycache__/switch_to.cpython-37.pyc,,
++selenium/webdriver/remote/__pycache__/utils.cpython-37.pyc,,
++selenium/webdriver/remote/__pycache__/webdriver.cpython-37.pyc,,
++selenium/webdriver/remote/__pycache__/webelement.cpython-37.pyc,,
++selenium/webdriver/remote/command.py,sha256=F2HYjoLGKGG_NDdDJ1-4b36-NPixU_N4JKNlPIRYkuQ,6499
++selenium/webdriver/remote/errorhandler.py,sha256=1lFjQBPRofEG4OCCTXW7fJJNgETjjvUcuLY4ZUQGl20,11691
++selenium/webdriver/remote/file_detector.py,sha256=YLKofsBD27Nk-PcQRGYJz7_h6vL2Fvlp0DxA47Y2yc4,1655
++selenium/webdriver/remote/getAttribute.js,sha256=EZipmZ3eJN0toNmHfMLo-N1wv9ru4LUBKyTlR0tQ6Iw,6354
++selenium/webdriver/remote/isDisplayed.js,sha256=waBAJOVBT8qMHe7bRSvneoudE7s89n_0Iw1Zg1N6MJY,43992
++selenium/webdriver/remote/mobile.py,sha256=FmRY6Q2xA0uC9mP53RC0-CpS4UWJioCZ3rgaXgtTKkE,2651
++selenium/webdriver/remote/remote_connection.py,sha256=5Vg-YydiKpejg7gaHjqfwWATLl5liA4xv_Ew7HZ20jU,20163
++selenium/webdriver/remote/switch_to.py,sha256=2aDQc0tbgfsBFQFN4mOev-yoekWSnXc7ED1TLL96HOA,4610
++selenium/webdriver/remote/utils.py,sha256=y1TMyyb6Jlq0S1kYoctYPCSUK51-hAAdEXzW5cpw4Yg,3068
++selenium/webdriver/remote/webdriver.py,sha256=nmNnXtUSi92qvBOwTqZUF-BKj9-B_IHGyaPrvk_XSio,41709
++selenium/webdriver/remote/webelement.py,sha256=BSY6pQYYQbwKHwcaCImVq9Ce9pgjhb__jTTANUads1k,23664
++selenium/webdriver/safari/__init__.py,sha256=3TKaBBK08eiCsGGFFcZlZwwjHHcmj2YO0xImghpJk38,787
++selenium/webdriver/safari/__pycache__/__init__.cpython-37.pyc,,
++selenium/webdriver/safari/__pycache__/permissions.cpython-37.pyc,,
++selenium/webdriver/safari/__pycache__/remote_connection.cpython-37.pyc,,
++selenium/webdriver/safari/__pycache__/service.cpython-37.pyc,,
++selenium/webdriver/safari/__pycache__/webdriver.cpython-37.pyc,,
++selenium/webdriver/safari/permissions.py,sha256=NkYeX6Oslo9PuofKAiWS8znaoV7piLX_7y9iaEyPCb0,942
++selenium/webdriver/safari/remote_connection.py,sha256=lMQ82qy8v-fVWCFYSKT_Dbxxi2l3DFlIRg5F_Q-XgQ0,1330
++selenium/webdriver/safari/service.py,sha256=SnS7bbGqtaJPdLt7VqDFbw5GWgRICMVsivSjRIv6km8,2414
++selenium/webdriver/safari/webdriver.py,sha256=vZDI5H2lodvebdosPwgPzxDvs1nSHYQ3KnlA1VPaeZo,4641
++selenium/webdriver/support/__init__.py,sha256=3TKaBBK08eiCsGGFFcZlZwwjHHcmj2YO0xImghpJk38,787
++selenium/webdriver/support/__pycache__/__init__.cpython-37.pyc,,
++selenium/webdriver/support/__pycache__/abstract_event_listener.cpython-37.pyc,,
++selenium/webdriver/support/__pycache__/color.cpython-37.pyc,,
++selenium/webdriver/support/__pycache__/event_firing_webdriver.cpython-37.pyc,,
++selenium/webdriver/support/__pycache__/events.cpython-37.pyc,,
++selenium/webdriver/support/__pycache__/expected_conditions.cpython-37.pyc,,
++selenium/webdriver/support/__pycache__/select.cpython-37.pyc,,
++selenium/webdriver/support/__pycache__/ui.cpython-37.pyc,,
++selenium/webdriver/support/__pycache__/wait.cpython-37.pyc,,
++selenium/webdriver/support/abstract_event_listener.py,sha256=vuXOIu91JBQXhcfTNUz46q0-dVK9Ct2YQN_-l1wTzUc,2033
++selenium/webdriver/support/color.py,sha256=OETTFeZ-alMCeMKGCS9wu35KVo4poeGL_o4KiHczLFc,11396
++selenium/webdriver/support/event_firing_webdriver.py,sha256=wOvYHB2yexd71O0wguMWnC11OcvhTR8SMyyTi8PMKhs,12342
++selenium/webdriver/support/events.py,sha256=amakwBWfJ37pInruIx1Jzev3-ocb6jCl9lc82TaD5Vw,920
++selenium/webdriver/support/expected_conditions.py,sha256=2s_rMJoQZ3zJHMiyyfTTU_MUEsh-levp_TJjd6xTFEs,13687
++selenium/webdriver/support/select.py,sha256=CLGqWOneyKZsMtb1SufEofJ-nAlp7GMjhIsXAL_bDGw,9257
++selenium/webdriver/support/ui.py,sha256=q6QHalMLPmpmPV8PfmN5K3LCS3JLpygOG6JmYUd3C5k,863
++selenium/webdriver/support/wait.py,sha256=XQs-3mdmZVmgkM3EW1qBw5_BDv_zxIOXEWO0hgGZjGc,4070
++selenium/webdriver/webkitgtk/__init__.py,sha256=3TKaBBK08eiCsGGFFcZlZwwjHHcmj2YO0xImghpJk38,787
++selenium/webdriver/webkitgtk/__pycache__/__init__.cpython-37.pyc,,
++selenium/webdriver/webkitgtk/__pycache__/options.cpython-37.pyc,,
++selenium/webdriver/webkitgtk/__pycache__/service.cpython-37.pyc,,
++selenium/webdriver/webkitgtk/__pycache__/webdriver.cpython-37.pyc,,
++selenium/webdriver/webkitgtk/options.py,sha256=KnfE2dS27_1x-3KNTPl5Vn1jY5uVXNZG6dSuoGNMZMQ,3184
++selenium/webdriver/webkitgtk/service.py,sha256=zWwp9-5vIOTCZN7xHYXiepQ7e1-rNGDBo_e4PxWsPx4,1580
++selenium/webdriver/webkitgtk/webdriver.py,sha256=4dwcYWG5HW2AsXow9KcPMnwjBSvb5OMd7f2cE4eYd6w,2959
+Index: venv/Lib/site-packages/selenium-3.141.0.dist-info/WHEEL
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/Lib/site-packages/selenium-3.141.0.dist-info/WHEEL	(date 1588348489289)
++++ venv/Lib/site-packages/selenium-3.141.0.dist-info/WHEEL	(date 1588348489289)
+@@ -0,0 +1,6 @@
++Wheel-Version: 1.0
++Generator: bdist_wheel (0.32.1)
++Root-Is-Purelib: true
++Tag: py2-none-any
++Tag: py3-none-any
++
+Index: venv/Lib/site-packages/six-1.14.0.dist-info/INSTALLER
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/Lib/site-packages/six-1.14.0.dist-info/INSTALLER	(date 1588348491112)
++++ venv/Lib/site-packages/six-1.14.0.dist-info/INSTALLER	(date 1588348491112)
+@@ -0,0 +1,1 @@
++pip
+Index: venv/Lib/site-packages/six-1.14.0.dist-info/LICENSE
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/Lib/site-packages/six-1.14.0.dist-info/LICENSE	(date 1588348491055)
++++ venv/Lib/site-packages/six-1.14.0.dist-info/LICENSE	(date 1588348491055)
+@@ -0,0 +1,18 @@
++Copyright (c) 2010-2020 Benjamin Peterson
++
++Permission is hereby granted, free of charge, to any person obtaining a copy of
++this software and associated documentation files (the "Software"), to deal in
++the Software without restriction, including without limitation the rights to
++use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
++the Software, and to permit persons to whom the Software is furnished to do so,
++subject to the following conditions:
++
++The above copyright notice and this permission notice shall be included in all
++copies or substantial portions of the Software.
++
++THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
++IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
++FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
++COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
++IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
++CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Index: venv/Lib/site-packages/six-1.14.0.dist-info/WHEEL
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/Lib/site-packages/six-1.14.0.dist-info/WHEEL	(date 1588348491057)
++++ venv/Lib/site-packages/six-1.14.0.dist-info/WHEEL	(date 1588348491057)
+@@ -0,0 +1,6 @@
++Wheel-Version: 1.0
++Generator: bdist_wheel (0.33.6)
++Root-Is-Purelib: true
++Tag: py2-none-any
++Tag: py3-none-any
++
+Index: venv/Lib/site-packages/attrs-19.3.0.dist-info/INSTALLER
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/Lib/site-packages/attrs-19.3.0.dist-info/INSTALLER	(date 1588348491715)
++++ venv/Lib/site-packages/attrs-19.3.0.dist-info/INSTALLER	(date 1588348491715)
+@@ -0,0 +1,1 @@
++pip
+Index: venv/Lib/site-packages/attrs-19.3.0.dist-info/LICENSE
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/Lib/site-packages/attrs-19.3.0.dist-info/LICENSE	(date 1588348491367)
++++ venv/Lib/site-packages/attrs-19.3.0.dist-info/LICENSE	(date 1588348491367)
+@@ -0,0 +1,21 @@
++The MIT License (MIT)
++
++Copyright (c) 2015 Hynek Schlawack
++
++Permission is hereby granted, free of charge, to any person obtaining a copy
++of this software and associated documentation files (the "Software"), to deal
++in the Software without restriction, including without limitation the rights
++to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
++copies of the Software, and to permit persons to whom the Software is
++furnished to do so, subject to the following conditions:
++
++The above copyright notice and this permission notice shall be included in all
++copies or substantial portions of the Software.
++
++THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
++IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
++FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
++AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
++LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
++OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
++SOFTWARE.
