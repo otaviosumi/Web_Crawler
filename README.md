@@ -13,7 +13,7 @@ Este projeto necessita de algumas bibliotecas e recursos instalados para que fun
 | Nome             	| Versão                       	|
 |------------------	|------------------------------	|
 | PyCharm          	| 2019.3.3 (Community Edition) 	|
-| Scrapy           	| 2.0.1                        	|
+| ~~Scrapy~~       	| 2.0.1                        	|
 | numpy            	| 1.18.2                       	|
 | selenium	        | 3.141.0                       |	    
 
