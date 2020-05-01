@@ -25,7 +25,7 @@ Após a instalação dos requisitos basta rodar o comando abaixo para que o arqu
 scrapy runspider scraper.py
 ```
 
-Alguns arquivos obtidos estão dispostos na pasta "_dados", os arquivos ".py" nela encontrados rodam normalmente.
+Os arquivos obtidos estão dispostos na pasta "_dados", os arquivos ".py" nela encontrados rodam normalmente.
 Há também arquivos de formatos diversos tanto manuamente quanto via código:
 
 | Arquivo              | Descrição                  |
